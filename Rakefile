@@ -114,6 +114,7 @@ task :new_post, :title do |t, args|
     post.puts "description: "
     post.puts "categories: "
     post.puts "tags: "
+    post.puts "published: true"
     post.puts "---"
   end
 end

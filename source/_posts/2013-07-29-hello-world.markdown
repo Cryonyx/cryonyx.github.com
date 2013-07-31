@@ -4,9 +4,9 @@ title: "Hello World"
 date: 2013-07-29 20:12
 comments: true
 keywords: hello world
-categories: [Misc, Hello World]
+categories: [Hello World]
 description: Hello World
-tags: Misc
+tags: [Misc, Hello World]
 
 ---
 
