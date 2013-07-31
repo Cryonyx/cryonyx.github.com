@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag:Algorithm | Cryo-Nyx Blog]]></title>
+  <link href="http://blog.cryonyx.tk/tags/algorithm/atom.xml" rel="self"/>
+  <link href="http://blog.cryonyx.tk/"/>
+  <updated>2013-07-31T23:59:37+08:00</updated>
+  <id>http://blog.cryonyx.tk/</id>
+  <author>
+    <name><![CDATA[Cryonyx]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CLRS - Ch2.2 - Analyzing Algorithm]]></title>
+    <link href="http://blog.cryonyx.tk/blog/2013/07/31/clrs-2-2-analyzing-algorithm/"/>
+    <updated>2013-07-31T22:07:00+08:00</updated>
+    <id>http://blog.cryonyx.tk/blog/2013/07/31/clrs-2-2-analyzing-algorithm</id>
+    <content type="html"><![CDATA[<p>前面的介绍略过不再记录，直接来看对于Insertion Sort的分析。</p>
+
+<h3 id="analysis-of-insertion-sort---">1.Analysis of insertion sort - 对插入排序的分析</h3>
+<p>衡量一个算法的好坏，重要的标准之一当然就是解决问题所需的时间的多少了，通常情况下都是希望运行越快越好。而算法的运行时间并不是固定的，它根据输入数据量的大小而变化。所以通常建立一个以输入数据量大小（input size）<script type="math/tex">n</script>为自变量的函数来表示算法的运行时间（running time）。</p>
+
+<p><code>Input size</code>的定义并不是固定不变的，对于前面提到的插入排序来说，<script type="math/tex">n</script>无非就是数组的大小。对于乘法来说，由于计算机的电子特性，一般用乘数的二进制位数作为衡量。而对于一个图论算法来讲，输入的数据量可能同时由图的节点(Vertices)和边(Edges)两个量组成。</p>
+
+<p><code>Running time</code>在这里暂时被定义为算法对于某一特定输入所需要执行的<code>操作数量</code>，或者说是所需执行的<code>步数</code>，这就把算法的运行时间和具体的计算机独立了开来，所以并不以算法在某一特定电脑上的运行时间为标准来定义算法的运行时间。</p>
+
+<p>假设每一行的操作都需要花费常数项的时间<script type="math/tex">C_i</script>，接下来我们就可以来分析一下插入排序了。</p>
+
+<p>其实CLRS这里的定义略显繁琐，比我在《Data Structure and Algorithm Analysis in C》中看到的描述要复杂上一些，因为其书中将每一个基本操作定义为相同的常数项时间（当然其实乘法所需的时间远大于加法），每一行可以含有多个基本操作，比如for循环的那一行就含有一次赋值，一次比较，与一次自增。而CLRS将每一行所需时间定义为一个常数项，那么有多少行就得有多少个常数项。</p>
+
+<p>–未完待续–</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CLRS - Ch2.1 - Insertion Sort]]></title>
+    <link href="http://blog.cryonyx.tk/blog/2013/07/31/clrs-2-1-note/"/>
+    <updated>2013-07-31T19:49:00+08:00</updated>
+    <id>http://blog.cryonyx.tk/blog/2013/07/31/clrs-2-1-note</id>
+    <content type="html"><![CDATA[<h3 id="insertion-sort---">1.Insertion Sort - 插入排序</h3>
+<p>插入排序是非常基础的一类排序，它和平时玩扑克牌时摸牌的排序方法几乎一模一样。每当拿到一张牌，我们就从右向左（反向当然也行）依次查看手上的牌的大小，直到找到一张牌比摸到的牌大，就把摸到的牌放到这一张后面。反复摸牌，最后我们就得到了一副从大到小排列的牌。这也符合我个人的打牌习惯。</p>
+
+<p>这个算法非常基础，CLRS本节中也已经对此讲的很清楚了，这里仅仅列出C语言实现。注意书中是从小到大进行的排列。</p>
+
+<p><code>c Insertion Sort
+void insertionSort(int A[], int num){
+    int i, j, key;
+    for(i = 2; i &lt;= num; i++){  /* 为了便于理解，这里设数组大小为num+1，数组从1开始计算下标 */
+        key = A[i];
+        j = i - 1;
+        while(j&gt;0 &amp;&amp; A[j]&lt;key){
+            A[j+1] = A[j];      /* 如果前一张牌比当前的牌大则交换两者 */
+            j--;
+        }
+        A[j+1] = key;
+    }
+}
+</code>
+<!--more--></p>
+
+<h3 id="loop-invariant---">2.Loop Invariant - 循环不变式</h3>
+<p>有时候为了解决某个问题而设计了某个算法后，虽然直觉上觉得这个算法应该能用，而实际的运行也确实能够正确解决这个问题，不过这个算法到底为什么是正确的呢？严谨一点儿的话，就不能仅仅靠直觉来判断了，所以CLRS中引入了<strong>Loop Invariant</strong>的概念，从数学上对算法中循环的正确性进行证明。</p>
+
+<p><strong>Loop Invariant</strong>是数学归纳法的一种变体，它和数学归纳法几乎完全相同，都是先证明一个初始条件为真，然后逐条递推，唯一的区别在于数学归纳法是将归纳步骤无限进行下去，证明了第n步再继续证明第n+1步，而Loop Invariant则是要在某一步停止，也就是当完成了循环的条件时。</p>
+
+<p>书中列出了应用Loop Invariant的三个步骤：</p>
+
+<blockquote>
+  <p><strong>Initialization</strong>: It is true prior to the first iteration of the loop.</p>
+
+  <p><strong>Maintenance</strong>: If it is true before an iteration of the loop, it remains true before the next iteration.</p>
+
+  <p><strong>Termination</strong>: When the loop terminates, the invariant gives us a useful property that hepls show that the algorithm is correct.</p>
+</blockquote>
+
+<p>然后这里就用循环不变式对上面提到的Insertion Sort进行检验。</p>
+
+<p><strong>Initializaton：</strong>首先，循环的初始条件是<code>i=2</code>，这个时候i指向数组中第2个元素，此时数组<code>A[1...i-1]</code>也就是<code>A[1]</code>仅包含1个元素，所以trivially，这一个元素的数组肯定是排好序的。</p>
+
+<p><strong>Maintenance：</strong>接着，<code>i=2</code>，循环进行第一次iteration。在进行这次循环之前，算法肯定是已经正确排序了<code>A[1]</code>。而注意每次的循环都是从选定的位置开始向左遍历，依次把比它小的牌右移一位，直到找到自己合适的位置。所以第1次循环结束后，数组的前两个元素<code>A[1...2]</code>处于排好序的状态。以此递推，可知第i次循环开始前，<code>A[1...i-1]</code>处于排好序的状态，而当次循环结束以后，第i个数已经被放到了正确的位置，数组<code>A[1...i]</code>无疑包含了已经正确排序的数组，而<code>A[i+1...num]</code>仍旧处于未排序状态。</p>
+
+<p><strong>Termination：</strong>最后就是循环结束了。当循环结束时<code>i=num+1</code>，此时<code>A[1...i-1]</code>就是<code>A[1...num]</code>，也就是整个数组，可知是处于排好序的状态。</p>
+
+<p>至此，就用类似数学归纳法的Loop Invariant将完全由循环构成的Insertion Sort的算法正确性给证明了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[测试001]]></title>
+    <link href="http://blog.cryonyx.tk/blog/2013/07/31/test001/"/>
+    <updated>2013-07-31T12:52:00+08:00</updated>
+    <id>http://blog.cryonyx.tk/blog/2013/07/31/test001</id>
+    <content type="html"><![CDATA[<p>这是Octopress部分功能的测试</p>
+
+<!--more-->
+
+<p>This is some text.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Other text.<sup id="fnref:footnote"><a href="#fn:footnote" class="footnote">2</a></sup>.</p>
+
+<pre><code>Here comes some code.
+</code></pre>
+
+<p>测试一下数学公式</p>
+
+<p>$X_1, X_2, X_3$</p>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+ %]]&gt;</script>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]&gt;</script>
+
+<p>段内插入LaTeX代码是这样的：$\exp(-\frac{x^2}{2})$，试试看看吧</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>test <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:footnote">
+      <p>必须被引用到才能实现上标 <a href="#fnref:footnote" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+</feed>

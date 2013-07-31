@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Hello World | Cryo-Nyx Blog]]></title>
-  <link href="http://Cryonyx.github.io/blog/categories/hello-world/atom.xml" rel="self"/>
-  <link href="http://Cryonyx.github.io/"/>
-  <updated>2013-07-31T12:33:46+08:00</updated>
-  <id>http://Cryonyx.github.io/</id>
+  <title><![CDATA[Category: Hello | Cryo-Nyx Blog]]></title>
+  <link href="http://blog.cryonyx.tk/blog/categories/hello/atom.xml" rel="self"/>
+  <link href="http://blog.cryonyx.tk/"/>
+  <updated>2013-07-31T23:59:37+08:00</updated>
+  <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://Cryonyx.github.io/blog/2013/07/29/hello-world/"/>
+    <link href="http://blog.cryonyx.tk/blog/2013/07/29/hello-world/"/>
     <updated>2013-07-29T20:12:00+08:00</updated>
-    <id>http://Cryonyx.github.io/blog/2013/07/29/hello-world</id>
+    <id>http://blog.cryonyx.tk/blog/2013/07/29/hello-world</id>
     <content type="html"><![CDATA[<p>Hello World!</p>
 
 <p>好吧，这是我用Octopress在Github上搭建好博客的第一篇文章。</p>

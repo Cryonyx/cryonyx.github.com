@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag:Misc | Cryo-Nyx Blog]]></title>
-  <link href="http://blog.cryonyx.tk/tags/misc/atom.xml" rel="self"/>
+  <title><![CDATA[Tag:Hello World | Cryo-Nyx Blog]]></title>
+  <link href="http://blog.cryonyx.tk/tags/hello-world/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
   <updated>2013-07-31T23:59:37+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
