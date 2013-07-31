@@ -4,3 +4,8 @@
   custom/_style.scss which is loaded after all plugin stylesheets.
 */
 
+footer .byline ~ .tags:before{
+	content: "\2022";
+	padding: 0 .4em 0 .2em;
+	display: inline-block;
+}

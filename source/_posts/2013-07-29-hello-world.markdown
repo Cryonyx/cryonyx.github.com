@@ -3,7 +3,11 @@ layout: post
 title: "Hello World"
 date: 2013-07-29 20:12
 comments: true
+keywords: hello world
 categories: [Misc, Hello World]
+description: Hello World
+tags: Misc
+
 ---
 
 Hello World!
