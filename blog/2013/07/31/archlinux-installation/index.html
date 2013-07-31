@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="不知不觉已经使用了Archlinux好几个月的时间了，期间也记录了一些安装使用中遇到的问题，最近又把arch重新装了一遍，这里把整理后的安装记录发上来。 Arch的安装过程是全命令行的，连Debian那样的字符模拟图形界面也不会提供，不过安装过程还是相当简单的。 &hellip;">
-  
+  <meta name="keywords" content="Archlinux">
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -96,9 +96,14 @@
 
 <p>Arch的安装过程是全命令行的，连Debian那样的字符模拟图形界面也不会提供，不过安装过程还是相当简单的。</p>
 
+<!-- more -->
+
+
 <p>我是从Debian下转到Archlinux，手头正好有一个不用的U盘，于是便按照ArchWiki的说明将U盘写入archlinux的iso镜像。用<code>syslinux</code>的那个方法我试了，但是记得没用，以后哪天再去研究一下吧。</p>
 
 <p><code>lsblk</code>找到u盘的设备名，比如我的是<code>/dev/sdb</code></p>
+
+<p>注意这个方法是会格式化u盘数据的！</p>
 
 <figure class='code'><figcaption><span>写入USB </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
