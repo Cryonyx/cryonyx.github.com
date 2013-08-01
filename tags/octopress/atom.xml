@@ -4,7 +4,7 @@
   <title><![CDATA[Tag:Octopress | Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/tags/octopress/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-01T13:21:14+08:00</updated>
+  <updated>2013-08-01T15:12:09+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -22,13 +22,13 @@
 
 <p>这种编写博客的方式立即就吸引了我。那段时间还挣扎在VIM和Emacs之间，对于Markdown也是久闻大名，当即决定，就是这货了！</p>
 
+<!-- more -->
+
 <p>当时对于Linux和Github都还算不上熟悉，一切都还在摸索的阶段，折腾了几下发完一篇Hello World之后就放下了。一直到这个暑假，因为各种原因（再次-_-）下定决心要开一个博客，于是顿时回想起了Octopress。做了一个调查后，我决定换用使用Python编写的Pelican来搭建博客，因为相对来说我对Python更有好感，不过用Pelican搭建好博客后在deploy的阶段老是遇到莫名其妙的字符编码错误，Google上搜索不到任何相关的资料，折腾了一天后连第一篇博文都没发到网上。</p>
 
 <p>于是我又把目光转回了Octopress。在Github的页面上看了看发现大家还是挺活跃的，最近的一次更新在十多天之前，于是决定还是用Octopress来搭建博客。</p>
 
 <p>Octopress的默认主题我觉得很不错，没有什么修改的动力，不过仍旧安装了一些插件，进行了一些小修小补，这里把安装过程记录下来，发到网上，供广大和我一样刚接触Octopress的朋友们参考一下吧。</p>
-
-<!-- more -->
 
 <h3 id="octopress">1.安装Octopress</h3>
 <p>这里给出<a href="http://octopress.org/docs/setup/">官方教程</a>的链接，本博文的教程和官方的几乎一致，不过在一些细节上会进行更详细的解说。</p>
@@ -208,7 +208,7 @@ rake aborted!
 rake new_page[About]
 </code></p>
 
-<p>这会在<code>source</code>目录下建立一个<code>About</code>文件夹，其中包含有<code>index.markdown</code>，你可以对其进行修改。</p>
+<p>这会在<code>source</code>目录下建立一个<code>About</code>文件夹，其中包含有<code>index.markdown</code>，可以对其进行修改。</p>
 
 <p>但是新增的页面并不会自动地显示到导航栏上去，还需要进行一定的修改。找到<code>source/_includes/custom/navigation.html</code>：</p>
 

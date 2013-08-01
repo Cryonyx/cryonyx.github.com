@@ -116,6 +116,24 @@ MathJax.Hub.Config({
 
 <time datetime="2013-07-31T19:49:00+08:00" pubdate data-updated="true">Posted at Jul 31<span>st</span>, 2013</time>
         
+
+<span class="categories">
+  
+    Category: <a class='category' href='/blog/categories/clrsdu-shu-bi-ji/'>CLRS读书笔记</a>
+  
+</span>
+
+
+        
+
+<span class="tags">
+  
+    Tags: <a class='tag' href='/tags/algorithm/'>Algorithm</a>, <a class='tag' href='/tags/clrs/'>CLRS</a>
+  
+</span>
+
+
+        
       </p>
     
   </header>
@@ -125,6 +143,8 @@ MathJax.Hub.Config({
 <p>插入排序是非常基础的一类排序，它和平时玩扑克牌时摸牌的排序方法几乎一模一样。每当拿到一张牌，我们就从右向左（反向当然也行）依次查看手上的牌的大小，直到找到一张牌比摸到的牌大，就把摸到的牌放到这一张后面。反复摸牌，最后我们就得到了一副从大到小排列的牌。这也符合我个人的打牌习惯。</p>
 
 <p>这个算法非常基础，CLRS本节中也已经对此讲的很清楚了，这里仅仅列出C语言实现。注意书中是从小到大进行的排列。</p>
+
+<!--more-->
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Insertion Sort</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -151,7 +171,6 @@ MathJax.Hub.Config({
 </span><span class="line">    <span class="p">}</span>
 </span><span class="line"><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<!--more-->
 
 <h3 id="loop-invariant---">2.Loop Invariant - 循环不变式</h3>
 <p>有时候为了解决某个问题而设计了某个算法后，虽然直觉上觉得这个算法应该能用，而实际的运行也确实能够正确解决这个问题，不过这个算法到底为什么是正确的呢？严谨一点儿的话，就不能仅仅靠直觉来判断了，所以CLRS中引入了<strong>Loop Invariant</strong>的概念，从数学上对算法中循环的正确性进行证明。</p>
@@ -295,17 +314,21 @@ MathJax.Hub.Config({
         <a href="/blog/2013/07/31/archlinux-installation/">Archlinux安装小记</a>
       </li>
     
+      <li class="post">
+        <a href="/blog/2013/07/29/hello-world/">Hello World</a>
+      </li>
+    
   </ul>
 </section>
 <section>
   <h1>Tags</h1>
   <ul class="tag-cloud">
     <a style="font-size: 180%" href="/tags/algorithm/">Algorithm</a>
-<a style="font-size: 143%" href="/tags/archlinux/">Archlinux</a>
+<a style="font-size: 180%" href="/tags/archlinux/">Archlinux</a>
 <a style="font-size: 80%" href="/tags/blog/">Blog</a>
 <a style="font-size: 180%" href="/tags/clrs/">CLRS</a>
-<a style="font-size: 143%" href="/tags/hello-world/">Hello World</a>
-<a style="font-size: 143%" href="/tags/misc/">Misc</a>
+<a style="font-size: 180%" href="/tags/hello-world/">Hello World</a>
+<a style="font-size: 180%" href="/tags/misc/">Misc</a>
 <a style="font-size: 80%" href="/tags/octopress/">Octopress</a>
 <a style="font-size: 80%" href="/tags/test/">Test</a>
 
