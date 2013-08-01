@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <title>Archlinux安装小记 - Cryo-Nyx Blog</title>
-  <meta name="author" content="<a href="http://blog.cryonyx.tk/about">Cryonyx</a>">
+  <meta name="author" content="Cryonyx">
 
   
   <meta name="description" content="不知不觉已经使用了Archlinux好几个月的时间了，期间也记录了一些安装使用中遇到的问题，最近又把arch重新装了一遍，这里把整理后的安装记录发上来。 Arch的安装过程是全命令行的，连Debian那样的字符模拟图形界面也不会提供，不过安装过程还是相当简单的。 &hellip;">
@@ -27,8 +27,8 @@
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"> -->
+<!-- <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"> -->
 <!-- mathjax config similar to math.stackexchange -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -46,6 +46,18 @@ MathJax.Hub.Config({
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42802539-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -381,7 +393,7 @@ MathJax.Hub.Config({
 <!--      
   
 
-<span class="byline author vcard">Posted by <span class="fn"><a href="http://blog.cryonyx.tk/about">Cryonyx</a></span></span>
+<span class="byline author vcard">Posted by <span class="fn">Cryonyx</span></span>
  -->
       
 
@@ -417,14 +429,16 @@ MathJax.Hub.Config({
 
       
 
+  
+
 <div class="cryocopyright">
   <!--<DIV style="MARGIN-TOP: 10px; FLOAT: left; MARGIN-LEFT: 5px; MARGIN-RIGHT: 10px">
       <IMG alt="" src="http://images.cnblogs.com/cnblogs_com/oec2003/219566/123.jpg" width=90 height=100>
   </DIV>-->
   <div id="cryoinfo">
-    作者： <a href="http://blog.cryonyx.tk/">Cryonyx</a> <br/>
-    出处： <a href="http://blog.cryonyx.tk/">http://blog.cryonyx.tk</a><br/>
-    本文基于 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" target="_blank">CC 创作共用版权协议(2.5 License)</a> ，要求<font class="cryobold">署名、非商业用途和保持一致</font>。转载本博原创作品(内容)也必须遵循“署名-非商业用途-保持一致”的创作共用协议，请务必以文字链接的形式标明或保留文章<a href="http://blog.cryonyx.tk" target="_blank" class="cryobold">原始出处</a>和博客作者(<a href="http://blog.cryonyx.tk/about" target="_blank"><font class="cryobold">Cryonyx</font></a>)的信息。本博客(原创)内容，一经转载，即表示您已经接受上述声明！
+    作者： <a href="http://blog.cryonyx.tk/about">Cryonyx</a> <br/>
+    出处： <a href="http://blog.cryonyx.tk">http://blog.cryonyx.tk</a><br/>
+    本文基于 <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/" target="_blank">CC 创作共用版权协议(2.5 License)</a> ，要求<font class="cryobold">署名、非商业用途和保持一致</font>。转载本博原创作品(内容)也必须遵循“署名-非商业用途-保持一致”的创作共用协议，请务必以文字链接的形式标明或保留文章<a href="./" target="_blank" class="cryobold">原始出处</a>和博客作者(<a href="http://blog.cryonyx.tk/about" target="_blank"><font class="cryobold">Cryonyx</font></a>)的信息。本博客(原创)内容，一经转载，即表示您已经接受上述声明！
   </div>
 </div>
 
@@ -463,11 +477,15 @@ MathJax.Hub.Config({
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/clrsdu-shu-bi-ji'>CLRS读书笔记 (2)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/clrsdu-shu-bi-ji'>CLRS读书笔记 (2)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/01/building-octopress-blog/">用Geek的方式来写博客(1)：在Github上搭建Octopress</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/07/31/clrs-2-2-analyzing-algorithm/">CLRS - Ch2.2 - Analyzing Algorithm</a>
@@ -485,21 +503,19 @@ MathJax.Hub.Config({
         <a href="/blog/2013/07/31/archlinux-installation/">Archlinux安装小记</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2013/07/29/hello-world/">Hello World</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Tags</h1>
   <ul class="tag-cloud">
-    <a style="font-size: 200%" href="/tags/algorithm/">Algorithm</a>
-<a style="font-size: 148%" href="/tags/archlinux/">Archlinux</a>
-<a style="font-size: 200%" href="/tags/clrs/">CLRS</a>
-<a style="font-size: 148%" href="/tags/hello-world/">Hello World</a>
-<a style="font-size: 148%" href="/tags/misc/">Misc</a>
-<a style="font-size: 60%" href="/tags/test/">Test</a>
+    <a style="font-size: 180%" href="/tags/algorithm/">Algorithm</a>
+<a style="font-size: 143%" href="/tags/archlinux/">Archlinux</a>
+<a style="font-size: 80%" href="/tags/blog/">Blog</a>
+<a style="font-size: 180%" href="/tags/clrs/">CLRS</a>
+<a style="font-size: 143%" href="/tags/hello-world/">Hello World</a>
+<a style="font-size: 143%" href="/tags/misc/">Misc</a>
+<a style="font-size: 80%" href="/tags/octopress/">Octopress</a>
+<a style="font-size: 80%" href="/tags/test/">Test</a>
 
   </ul>
 </section>
@@ -515,7 +531,7 @@ MathJax.Hub.Config({
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - <a href="http://blog.cryonyx.tk/about">Cryonyx</a> -
+  Copyright &copy; 2013 - Cryonyx -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
