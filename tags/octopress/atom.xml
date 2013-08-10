@@ -4,7 +4,7 @@
   <title><![CDATA[Tag:Octopress | Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/tags/octopress/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:11:06+08:00</updated>
+  <updated>2013-08-10T22:15:21+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -93,8 +93,9 @@ rake install
 <p><code>bash Gem使用代理
 gem install bundler --http-proxy http://localhost:8087
 </code>
-### 2.配置Octopress
-<code>Octopress</code>的根目录下有四个配置文件：</p>
+### 2.配置Octopress</p>
+
+<p><code>Octopress</code>的根目录下有四个配置文件：</p>
 
 <p><code>text Octopress配置文件
 _config.yml       # Main config (Jekyll's settings)
