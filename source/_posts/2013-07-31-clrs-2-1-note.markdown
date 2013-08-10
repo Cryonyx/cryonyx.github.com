@@ -15,6 +15,8 @@ published: true
 
 这个算法非常基础，CLRS本节中也已经对此讲的很清楚了，这里仅仅列出C语言实现。注意书中是从小到大进行的排列。
 
+<!--more-->
+
 ```c Insertion Sort
 void insertionSort(int A[], int num){
     int i, j, key;
@@ -29,7 +31,6 @@ void insertionSort(int A[], int num){
     }
 }
 ```
-<!--more-->
 
 ### 2.Loop Invariant - 循环不变式
 有时候为了解决某个问题而设计了某个算法后，虽然直觉上觉得这个算法应该能用，而实际的运行也确实能够正确解决这个问题，不过这个算法到底为什么是正确的呢？严谨一点儿的话，就不能仅仅靠直觉来判断了，所以CLRS中引入了**Loop Invariant**的概念，从数学上对算法中循环的正确性进行证明。

@@ -6,7 +6,7 @@ comments: false
 keywords:
 description:
 categories: Test
-tags: [Misc, Test, Algorithm, Archlinux, Hello World, CLRS]
+tags: [Misc, Test, Archlinux, Hello World]
 published: true
 ---
 

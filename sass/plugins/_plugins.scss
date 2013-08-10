@@ -9,3 +9,8 @@ footer .tags:before,.categories:before{
 	padding: 0 .4em 0 .2em;
 	display: inline-block;
 }
+.blog-index .tags:before,.categories:before{
+	content: "\2022";
+	padding: 0 .4em 0 .2em;
+	display: inline-block;
+}
