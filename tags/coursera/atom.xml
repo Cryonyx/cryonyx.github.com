@@ -4,7 +4,7 @@
   <title><![CDATA[Tag:Coursera | Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/tags/coursera/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:05:52+08:00</updated>
+  <updated>2013-08-10T22:10:05+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -329,11 +329,13 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
     <updated>2013-08-07T21:03:00+08:00</updated>
     <id>http://blog.cryonyx.tk/blog/2013/08/07/algo-004-note-week-1</id>
     <content type="html"><![CDATA[<h2 id="section">零、写在算法学习之前</h2>
-<p>可能对于一名普通的软件编程人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
+<p>这是Coursera站上的Algorithms：Design and Analysis课程的笔记，综合推荐阅读材料（几乎就是CLRS了），再加上本人的一些理解，汇集而成。在整理修改之后，我会慢慢的放到博客上边，以后参加这门课程的童鞋们可以作为参考，不过我尽量做到就算没看过课程的人也能读懂明白是在讲啥的程度的吧～有错误的地方欢迎大家指出哈～</p>
+
+<p>可能对于一名普通的软件开发人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
 
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
-<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
+<p>另外，极为想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
 
 <h2 id="section-1">一、算法分析基本符号</h2>
 
