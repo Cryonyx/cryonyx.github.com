@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:15:50+08:00</updated>
+  <updated>2013-08-10T22:21:46+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -165,7 +165,7 @@ categories:
 
 <p>其中<code>layout: post</code>是指调用<code>source/_layout/post.html</code>作为文章模板，<code>title</code>无疑就是文章的标题，默认值是新建文章填入的字符。如果不想让文章被评论的话，可以设置<code>comments</code>为<code>false</code>。而<code>categories</code>自然就是给文章的分类了。</p>
 
-<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了（其实连<code>generate</code>都省了）。</p>
+<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了。</p>
 
 <p>每次都手动输入略显麻烦，我们可以稍微修改一下<code>Rakefile</code>，找到第106行左右的区域：</p>
 
@@ -198,7 +198,7 @@ rake aborted!
 
 <p>那么博客文章能不能使用中文标题呢？当然是可以的，<code>rake new_post</code>的时候给文章起一个英文名，或者用拼音代替，然后修改<code>markdown</code>文件里的<code>title</code>即可以给文章设置中文名了。</p>
 
-<p>另外一个需要注意的地方是，每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
+<p>另外一个需要注意的地方是，<code>yaml信息</code>中每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
 
 <p>在<code>---</code>下方写上博客的内容，比如再写一句”Hello World!”，这篇博文就算完成了，保存吧。</p>
 
