@@ -4,7 +4,7 @@
   <title><![CDATA[Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:15:21+08:00</updated>
+  <updated>2013-08-10T22:15:50+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -871,7 +871,8 @@ T(n)=
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gem使用代理</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bash"><span class="line">gem install bundler --http-proxy http://localhost:8087
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>### 2.配置Octopress</p>
+
+<h3 id="octopress-1">2.配置Octopress</h3>
 
 <p><code>Octopress</code>的根目录下有四个配置文件：</p>
 
