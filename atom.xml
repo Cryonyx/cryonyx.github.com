@@ -4,7 +4,7 @@
   <title><![CDATA[Cryo-Nyx Blog]]></title>
   <link href="http://blog.cryonyx.tk/atom.xml" rel="self"/>
   <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T12:01:18+08:00</updated>
+  <updated>2013-08-10T12:08:17+08:00</updated>
   <id>http://blog.cryonyx.tk/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -59,6 +59,8 @@ O(n^{log_ba}) &(a>b^d)
 <p>对于<code>Karatsuba Multiplication</code>而言，$a=3，b=2，d=0$，所以$T(n)=O(n^{log_23})$。</p>
 
 <p>对于<code>Binary Search</code>而言，$a=1，b=2，d=0$，所以$T(n)=O(n^0log_2n)=O(log_2n)$。</p>
+
+<!-- more -->
 
 <h3 id="proof---">Proof - 证明</h3>
 <p>把上面的三种情况给记住就能应付相当一部分的分析了，不过为了更深入的理解<code>Master Method</code>，我们看看这三种情况是怎么来的。</p>
@@ -381,6 +383,8 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 <p>数学定义：$T(n)=Θ(f(n))$当且仅当存在一个正常数$c_1$，$c_2$以及正整数$n_0$，使得对于任意$n&gt;n_0$，总有$c_1f(n)\leqslant T(n)\leqslant cf(n)$。</p>
 
 <p>这表示，T(n)与f(n)仅相差一个常数项系数大小，也就是说它们的增长率相同。</p>
+
+<!-- more -->
 
 <h3 id="o-and-">o and ω</h3>
 <p>此外，还有Little-Oh(o)和ω符号，他们的定义与Big-Oh和Ω相似，但是取消了相等的条件。</p>
