@@ -4,7 +4,7 @@
   <title><![CDATA[Cryo-Nyx Blog]]></title>
   <link href="http://Cryonyx.github.io/atom.xml" rel="self"/>
   <link href="http://Cryonyx.github.io/"/>
-  <updated>2013-11-13T11:02:04+08:00</updated>
+  <updated>2013-11-13T11:03:50+08:00</updated>
   <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -21,23 +21,6 @@
     <content type="html"><![CDATA[<h3 id="section">一切之始</h3>
 
 <p>在大学里边你总会遇到这样一种人，他们表现的技术能力超出一般人，但是你稍微一了解之后，就会发现那实在是太坑爹了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[数据挖掘实验室日记 - 第二天]]></title>
-    <link href="http://Cryonyx.github.io/blog/2013/09/06/dm-day-002/"/>
-    <updated>2013-09-06T19:58:00+08:00</updated>
-    <id>http://Cryonyx.github.io/blog/2013/09/06/dm-day-002</id>
-    <content type="html"><![CDATA[<p>今天的工作还是看Python。由于有C和Java的基础，看起来很快，老师给的Python简明教程只有100来页，一会儿就看到了13章。期间老师过来了一趟看了看我的进度，然后我就去吃晚饭去了。（还好去了，要不然又得被拉去一起吃饭了）</p>
-
-<p>吃完饭去工作室看了看。</p>
-
-<p>回了计科楼后，发现实验室还是一个人也没有。打开灯，走到自己的桌前，赫然发现桌上多了一本书——《数据挖掘 - 概念与技术》。好吧，这才第一天呢，看过我的Python学习进度，居然直接就扔了一本数据挖掘的书过来。这是变相的催我进度啊-_-。</p>
-
-<p>意思是赶紧搞定Python，开始看数据挖掘么。听老师说高数、线性代数、概率与统计都非常重要。以后的日子辛苦了，总之，加油吧！</p>
-
-<p>晚上老师带过来两个大二的学生</p>
 ]]></content>
   </entry>
   
