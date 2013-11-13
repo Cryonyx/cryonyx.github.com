@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag:大学 | Cryo-Nyx Blog]]></title>
+  <link href="http://Cryonyx.github.io/tags/da-xue/atom.xml" rel="self"/>
+  <link href="http://Cryonyx.github.io/"/>
+  <updated>2013-11-13T11:02:04+08:00</updated>
+  <id>http://Cryonyx.github.io/</id>
+  <author>
+    <name><![CDATA[Cryonyx]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我在大学里边遇到的那些人]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/09/15/the-people-i-met-in-college/"/>
+    <updated>2013-09-15T20:55:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/09/15/the-people-i-met-in-college</id>
+    <content type="html"><![CDATA[<h3 id="section">一切之始</h3>
+
+<p>在大学里边你总会遇到这样一种人，他们表现的技术能力超出一般人，但是你稍微一了解之后，就会发现那实在是太坑爹了。</p>
+]]></content>
+  </entry>
+  
+</feed>

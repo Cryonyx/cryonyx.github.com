@@ -217,8 +217,10 @@ MathJax.Hub.Config({
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gem使用代理</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bash"><span class="line">gem install bundler --http-proxy http://localhost:8087
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>### 2.配置Octopress
-<code>Octopress</code>的根目录下有四个配置文件：</p>
+
+<h3 id="octopress-1">2.配置Octopress</h3>
+
+<p><code>Octopress</code>的根目录下有四个配置文件：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Octopress配置文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -309,7 +311,7 @@ MathJax.Hub.Config({
 
 <p>其中<code>layout: post</code>是指调用<code>source/_layout/post.html</code>作为文章模板，<code>title</code>无疑就是文章的标题，默认值是新建文章填入的字符。如果不想让文章被评论的话，可以设置<code>comments</code>为<code>false</code>。而<code>categories</code>自然就是给文章的分类了。</p>
 
-<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了（其实连<code>generate</code>都省了）。</p>
+<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了。</p>
 
 <p>每次都手动输入略显麻烦，我们可以稍微修改一下<code>Rakefile</code>，找到第106行左右的区域：</p>
 
@@ -355,7 +357,7 @@ MathJax.Hub.Config({
 
 <p>那么博客文章能不能使用中文标题呢？当然是可以的，<code>rake new_post</code>的时候给文章起一个英文名，或者用拼音代替，然后修改<code>markdown</code>文件里的<code>title</code>即可以给文章设置中文名了。</p>
 
-<p>另外一个需要注意的地方是，每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
+<p>另外一个需要注意的地方是，<code>yaml信息</code>中每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
 
 <p>在<code>---</code>下方写上博客的内容，比如再写一句”Hello World!”，这篇博文就算完成了，保存吧。</p>
 
@@ -492,7 +494,7 @@ MathJax.Hub.Config({
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/07/31/clrs-2-2-analyzing-algorithm/" title="Previous Post: CLRS - Ch2.2 - Analyzing Algorithm">&laquo; CLRS - Ch2.2 - Analyzing Algorithm</a>
+        <a class="basic-alignment left" href="/blog/2013/07/31/test001/" title="Previous Post: 测试001">&laquo; 测试001</a>
       
       
         <a class="basic-alignment right" href="/blog/2013/08/07/algo-004-note-week-1/" title="Next Post: Algorithms - Week 1 - Note">Algorithms - Week 1 - Note &raquo;</a>
@@ -513,11 +515,23 @@ MathJax.Hub.Config({
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/clrsdu-shu-bi-ji'>CLRS读书笔记 (2)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/diary'>Diary (1)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li><li><a href='/blog/categories/sui-bi'>随笔 (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/15/the-people-i-met-in-college/">我在大学里边遇到的那些人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/06/dm-day-002/">数据挖掘实验室日记 - 第二天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/05/dm-day-001/">数据挖掘实验室日记 - 第一天</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/08/07/algo-004-note-week-2/">Algorithms - Week 2 - Note</a>
@@ -529,14 +543,6 @@ MathJax.Hub.Config({
     
       <li class="post">
         <a href="/blog/2013/08/01/building-octopress-blog/">用Geek的方式来写博客(1)：在Github上搭建Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-2-analyzing-algorithm/">CLRS - Ch2.2 - Analyzing Algorithm</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-1-note/">CLRS - Ch2.1 - Insertion Sort</a>
       </li>
     
       <li class="post">
@@ -557,14 +563,16 @@ MathJax.Hub.Config({
   <h1>Tags</h1>
   <ul class="tag-cloud">
     <a style="font-size: 180%" href="/tags/algorithm/">Algorithm</a>
-<a style="font-size: 130%" href="/tags/archlinux/">Archlinux</a>
+<a style="font-size: 180%" href="/tags/archlinux/">Archlinux</a>
 <a style="font-size: 80%" href="/tags/blog/">Blog</a>
-<a style="font-size: 130%" href="/tags/clrs/">CLRS</a>
-<a style="font-size: 130%" href="/tags/coursera/">Coursera</a>
-<a style="font-size: 130%" href="/tags/hello-world/">Hello World</a>
-<a style="font-size: 130%" href="/tags/misc/">Misc</a>
+<a style="font-size: 180%" href="/tags/coursera/">Coursera</a>
+<a style="font-size: 80%" href="/tags/data-mining/">Data Mining</a>
+<a style="font-size: 180%" href="/tags/hello-world/">Hello World</a>
+<a style="font-size: 180%" href="/tags/misc/">Misc</a>
 <a style="font-size: 80%" href="/tags/octopress/">Octopress</a>
 <a style="font-size: 80%" href="/tags/test/">Test</a>
+<a style="font-size: 80%" href="/tags/da-xue/">大学</a>
+<a style="font-size: 80%" href="/tags/sui-bi/">随笔</a>
 
   </ul>
 </section>

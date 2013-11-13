@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Diary | Cryo-Nyx Blog]]></title>
+  <link href="http://Cryonyx.github.io/blog/categories/diary/atom.xml" rel="self"/>
+  <link href="http://Cryonyx.github.io/"/>
+  <updated>2013-11-13T11:02:04+08:00</updated>
+  <id>http://Cryonyx.github.io/</id>
+  <author>
+    <name><![CDATA[Cryonyx]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[数据挖掘实验室日记 - 第一天]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/09/05/dm-day-001/"/>
+    <updated>2013-09-05T22:59:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/09/05/dm-day-001</id>
+    <content type="html"><![CDATA[<p>中午时分，突然接到一个电话。看到名字时我还楞了好久，一时间想不起来这个我保存了号码的人是谁，不过电话肯定还是要接的。电话那头是个女生，很直接地问我了：“咱院里新来了一个博士，专业是数据挖掘，要搞一个实验室做工程，在招学生帮忙，你愿意来不？”</p>
+
+<p>那一瞬间，我心里边的感受比较复杂。在好的大学可能这样的机会并不少，但是当初我高考时数学上边失足颇深，几分之差没有考上想去的学校，补录又差点儿没赶上，最后由于实在想读计算机，便选了一所还在招计算机的学校——一所师范学院。</p>
+
+<p>来学校之前虽然有一定的心理准备，但直到真正的来到这个师范学院的计算机院之后，我才深深的意识到了和理工院校的差距之大。原本我以为本科内不会有跟老师做项目、做工程的机会了，结果没想到机会不期而遇啊。</p>
+
+<p>于是我急忙答应了，说好下午上完课去找那位博士老师。电话接到这个时候，我终于想起来这个女生是大一的时候一起参加计算机院学生会学术部的静华同学，汗颜啊。。。</p>
+
+<p>下午四节课都有课，而且挺重要的课——网络原理和操作系统，而静华有三节课。于是我便预谋着上完三节课就跷课去找老师，结果下午第二节课下课时，操作系统的老师过来说后两节课临时取消了，便联系了静华一起翘了后两节课，去找那位博士老师了。</p>
+]]></content>
+  </entry>
+  
+</feed>

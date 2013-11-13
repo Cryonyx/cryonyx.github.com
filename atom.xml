@@ -4,7 +4,7 @@
   <title><![CDATA[Cryo-Nyx Blog]]></title>
   <link href="http://Cryonyx.github.io/atom.xml" rel="self"/>
   <link href="http://Cryonyx.github.io/"/>
-  <updated>2013-11-13T10:59:08+08:00</updated>
+  <updated>2013-11-13T11:02:04+08:00</updated>
   <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我在大学里边遇到的那些人]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/09/15/the-people-i-met-in-college/"/>
+    <updated>2013-09-15T20:55:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/09/15/the-people-i-met-in-college</id>
+    <content type="html"><![CDATA[<h3 id="section">一切之始</h3>
+
+<p>在大学里边你总会遇到这样一种人，他们表现的技术能力超出一般人，但是你稍微一了解之后，就会发现那实在是太坑爹了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数据挖掘实验室日记 - 第二天]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/09/06/dm-day-002/"/>
+    <updated>2013-09-06T19:58:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/09/06/dm-day-002</id>
+    <content type="html"><![CDATA[<p>今天的工作还是看Python。由于有C和Java的基础，看起来很快，老师给的Python简明教程只有100来页，一会儿就看到了13章。期间老师过来了一趟看了看我的进度，然后我就去吃晚饭去了。（还好去了，要不然又得被拉去一起吃饭了）</p>
+
+<p>吃完饭去工作室看了看。</p>
+
+<p>回了计科楼后，发现实验室还是一个人也没有。打开灯，走到自己的桌前，赫然发现桌上多了一本书——《数据挖掘 - 概念与技术》。好吧，这才第一天呢，看过我的Python学习进度，居然直接就扔了一本数据挖掘的书过来。这是变相的催我进度啊-_-。</p>
+
+<p>意思是赶紧搞定Python，开始看数据挖掘么。听老师说高数、线性代数、概率与统计都非常重要。以后的日子辛苦了，总之，加油吧！</p>
+
+<p>晚上老师带过来两个大二的学生</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数据挖掘实验室日记 - 第一天]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/09/05/dm-day-001/"/>
+    <updated>2013-09-05T22:59:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/09/05/dm-day-001</id>
+    <content type="html"><![CDATA[<p>中午时分，突然接到一个电话。看到名字时我还楞了好久，一时间想不起来这个我保存了号码的人是谁，不过电话肯定还是要接的。电话那头是个女生，很直接地问我了：“咱院里新来了一个博士，专业是数据挖掘，要搞一个实验室做工程，在招学生帮忙，你愿意来不？”</p>
+
+<p>那一瞬间，我心里边的感受比较复杂。在好的大学可能这样的机会并不少，但是当初我高考时数学上边失足颇深，几分之差没有考上想去的学校，补录又差点儿没赶上，最后由于实在想读计算机，便选了一所还在招计算机的学校——一所师范学院。</p>
+
+<p>来学校之前虽然有一定的心理准备，但直到真正的来到这个师范学院的计算机院之后，我才深深的意识到了和理工院校的差距之大。原本我以为本科内不会有跟老师做项目、做工程的机会了，结果没想到机会不期而遇啊。</p>
+
+<p>于是我急忙答应了，说好下午上完课去找那位博士老师。电话接到这个时候，我终于想起来这个女生是大一的时候一起参加计算机院学生会学术部的静华同学，汗颜啊。。。</p>
+
+<p>下午四节课都有课，而且挺重要的课——网络原理和操作系统，而静华有三节课。于是我便预谋着上完三节课就跷课去找老师，结果下午第二节课下课时，操作系统的老师过来说后两节课临时取消了，便联系了静华一起翘了后两节课，去找那位博士老师了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Algorithms - Week 2 - Note]]></title>
@@ -35,20 +80,21 @@ T(n)=aT(\frac{n}{b})+O(n^d)
 
 <p>然后就能够根据a、b、d的值得到如下式子：</p>
 
-<p>$$
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
 \begin{equation}
 \begin{aligned}
 T(n)=
 \begin{cases}
-O(n^dlogn) &amp;(a=b^d)<br />
-O(n^d) &amp;(a&lt;b^d)<br />
-O(n^{log_ba}) &amp;(a&gt;b^d)
+O(n^dlogn) &(a=b^d)\\
+O(n^d) &(a<b^d)\\
+O(n^{log_ba}) &(a>b^d)
 \end{cases}
 \end{aligned}
 \end{equation}
-$$
-<!--more-->
-这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
+ %]]&gt;</script>
+
+<p>这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
 
 <p>现在，根据$a$与$b^d$的关系，我们就能够利用<code>Master Method</code>来进行算法分析了。</p>
 
@@ -58,6 +104,8 @@ $$
 <p>对于<code>Karatsuba Multiplication</code>而言，$a=3，b=2，d=0$，所以$T(n)=O(n^{log_23})$。</p>
 
 <p>对于<code>Binary Search</code>而言，$a=1，b=2，d=0$，所以$T(n)=O(n^0log_2n)=O(log_2n)$。</p>
+
+<!-- more -->
 
 <h3 id="proof---">Proof - 证明</h3>
 <p>把上面的三种情况给记住就能应付相当一部分的分析了，不过为了更深入的理解<code>Master Method</code>，我们看看这三种情况是怎么来的。</p>
@@ -348,13 +396,15 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
     <updated>2013-08-07T21:03:00+08:00</updated>
     <id>http://Cryonyx.github.io/blog/2013/08/07/algo-004-note-week-1</id>
     <content type="html"><![CDATA[<h2 id="section">零、写在算法学习之前</h2>
-<p>可能对于一名普通的软件编程人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
+<p>这是Coursera站上的<a href="https://class.coursera.org/algo-004/class/index">Algorithms：Design and Analysis</a>课程的笔记，综合推荐阅读材料（几乎就是CLRS了），再加上本人的一些理解，汇集而成。在整理修改之后，我会慢慢的放到博客上边，以后参加这门课程的童鞋们可以作为参考，不过我尽量做到就算没看过课程的人也能读懂明白是在讲啥的程度的吧～有错误的地方欢迎大家指出哈～</p>
+
+<p>可能对于一名普通的软件开发人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
 
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
-<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～
-<!--more-->
-## 一、算法分析基本符号</p>
+<p>另外，极为想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
+
+<h2 id="section-1">一、算法分析基本符号</h2>
 
 <h3 id="big-oh-notation">Big-Oh Notation</h3>
 <p>$T(n)=O(f(n))$</p>
@@ -380,6 +430,8 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 <p>数学定义：$T(n)=Θ(f(n))$当且仅当存在一个正常数$c_1$，$c_2$以及正整数$n_0$，使得对于任意$n&gt;n_0$，总有$c_1f(n)\leqslant T(n)\leqslant cf(n)$。</p>
 
 <p>这表示，T(n)与f(n)仅相差一个常数项系数大小，也就是说它们的增长率相同。</p>
+
+<!-- more -->
 
 <h3 id="o-and-">o and ω</h3>
 <p>此外，还有Little-Oh(o)和ω符号，他们的定义与Big-Oh和Ω相似，但是取消了相等的条件。</p>
@@ -509,7 +561,7 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 <h3 id="merge-sort---">Merge Sort - 归并排序</h3>
 <p>这是一个排序算法，在1945年由John von Neumann所提出。和我们熟悉的冒泡排序、插入排序、选择排序相比，这个算法面对大数据的时候占有很大优势，因为它的算法时间复杂度仅为$Θ(n\log_2n)$，而冒泡排序等都为$Θ(n^2)$。需要注意，$\log_2n$要远小于$n$哦，可以把$2^{20}$代进去看看。</p>
 
-<h4 id="section-1">算法实现</h4>
+<h4 id="section-2">算法实现</h4>
 <p>Merge Sort的思路完全符合D&amp;C：</p>
 
 <p><strong>Divide：</strong>将$n$个元素的数组划分为两个$\frac{n}{2}$个元素的数组；</p>
@@ -864,8 +916,10 @@ T(n)=
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gem使用代理</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="bash"><span class="line">gem install bundler --http-proxy http://localhost:8087
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>### 2.配置Octopress
-<code>Octopress</code>的根目录下有四个配置文件：</p>
+
+<h3 id="octopress-1">2.配置Octopress</h3>
+
+<p><code>Octopress</code>的根目录下有四个配置文件：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Octopress配置文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -956,7 +1010,7 @@ T(n)=
 
 <p>其中<code>layout: post</code>是指调用<code>source/_layout/post.html</code>作为文章模板，<code>title</code>无疑就是文章的标题，默认值是新建文章填入的字符。如果不想让文章被评论的话，可以设置<code>comments</code>为<code>false</code>。而<code>categories</code>自然就是给文章的分类了。</p>
 
-<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了（其实连<code>generate</code>都省了）。</p>
+<p>其实可以使用的属性项远不止如此，比如我们还可以加入<code>keywords</code>，<code>description</code>，这样可以生成网页的<code>meta</code>信息，帮助推广。另外如果一篇文章只是草稿，还没有到发布的时候，可以加入<code>published: false</code>，这样文章就不会显示出来了。</p>
 
 <p>每次都手动输入略显麻烦，我们可以稍微修改一下<code>Rakefile</code>，找到第106行左右的区域：</p>
 
@@ -1002,7 +1056,7 @@ T(n)=
 
 <p>那么博客文章能不能使用中文标题呢？当然是可以的，<code>rake new_post</code>的时候给文章起一个英文名，或者用拼音代替，然后修改<code>markdown</code>文件里的<code>title</code>即可以给文章设置中文名了。</p>
 
-<p>另外一个需要注意的地方是，每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
+<p>另外一个需要注意的地方是，<code>yaml信息</code>中每一个冒号后面都必须要有一个<code>空格</code>，否则会<code>Build Failed</code>。</p>
 
 <p>在<code>---</code>下方写上博客的内容，比如再写一句”Hello World!”，这篇博文就算完成了，保存吧。</p>
 
@@ -1068,175 +1122,6 @@ T(n)=
 <p>什么？404？There isn’t a GitHub Page here？没关系，一般情况下这是因为延迟，稍等几分钟再看就好了。如果还是不行的话，检查一下上面的步骤，到<code>https://github.com/username/username.github.com</code>看看是否已经deploy成功，然后再<code>rake deploy</code>一次吧。</p>
 
 <p>下面一篇博文将会讲到一些插件的使用，为博客添加上更丰富的功能，以及在使用这些插件中所遇到的一些问题和解决方法。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CLRS - Ch2.2 - Analyzing Algorithm]]></title>
-    <link href="http://Cryonyx.github.io/blog/2013/07/31/clrs-2-2-analyzing-algorithm/"/>
-    <updated>2013-07-31T22:07:00+08:00</updated>
-    <id>http://Cryonyx.github.io/blog/2013/07/31/clrs-2-2-analyzing-algorithm</id>
-    <content type="html"><![CDATA[<p>前面的介绍略过不再记录，直接来看对于Insertion Sort的分析。</p>
-
-<h3 id="analysis-of-insertion-sort---">1.Analysis of insertion sort - 对插入排序的分析</h3>
-<p>衡量一个算法的好坏，重要的标准之一当然就是解决问题所需的时间的多少了，通常情况下都是希望运行越快越好。而算法的运行时间并不是固定的，它根据输入数据量的大小而变化。所以通常建立一个以输入数据量大小（input size）<script type="math/tex">n</script>为自变量的函数来表示算法的运行时间（running time）。</p>
-
-<!-- more -->
-
-<p><code>Input size</code>的定义并不是固定不变的，对于前面提到的插入排序来说，<script type="math/tex">n</script>无非就是数组的大小。对于乘法来说，由于计算机的电子特性，一般用乘数的二进制位数作为衡量。而对于一个图论算法来讲，输入的数据量可能同时由图的节点(Vertices)和边(Edges)两个量组成。</p>
-
-<p><code>Running time</code>在这里暂时被定义为算法对于某一特定输入所需要执行的<code>操作数量</code>，或者说是所需执行的<code>步数</code>，这就把算法的运行时间和具体的计算机独立了开来，所以并不以算法在某一特定电脑上的运行时间为标准来定义算法的运行时间。</p>
-
-<p>假设每一行的操作都需要花费常数项的时间<script type="math/tex">c_i</script>，接下来我们就可以来分析一下插入排序了。</p>
-
-<p>其实CLRS这里的定义略显繁琐，比我在《Data Structure and Algorithm Analysis in C》中看到的描述要复杂上一些，因为其书中将每一个基本操作定义为相同的常数项时间（当然其实乘法所需的时间远大于加法），每一行可以含有多个基本操作，比如for循环的那一行就含有一次赋值，一次比较，与一次自增。而CLRS将每一行所需时间定义为一个常数项，那么有多少行就得有多少个常数项。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>void insertionSort(int A[], int num)</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>     <span class="c1">//c1</span>
-</span><span class="line">    <span class="n">key</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>                <span class="c1">//c2</span>
-</span><span class="line">    <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>                 <span class="c1">//c3</span>
-</span><span class="line">    <span class="k">while</span><span class="p">(</span><span class="n">j</span><span class="o">&gt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="n">key</span><span class="p">){</span>    <span class="c1">//c4</span>
-</span><span class="line">        <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>         <span class="c1">//c5</span>
-</span><span class="line">        <span class="n">j</span><span class="o">--</span><span class="p">;</span>                   <span class="c1">//c6</span>
-</span><span class="line">    <span class="p">}</span>
-</span><span class="line">    <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span>              <span class="c1">//c8</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>设$T(n)$为插入排序的运行时间，每行所需时间$c_i$如上所示，另设每一次while循环执行的次数为$t_i$，也即根据$i$的数值而变化。</p>
-
-<p>显然第1行for执行次数为$n$，但循环体内部代码只执行$n-1$次，因为条件判断会比循环体内部代码多执行1次以判断结束条件。所以，第2、3、8行都执行$n-1$次。第四行所需执行的总次数应该为$\sum_{i=2}^{n}t_i$。</p>
-
-<p>和上面for循环同理，每当while执行了$t_i$次时，它的内部代码只执行了$t_i-1$次，所以第5、6行的总执行次数应该均为$\sum_{i=2}^{n}(t_i-1)$。</p>
-
-<p>综上所述：</p>
-
-<script type="math/tex; mode=display">
-\begin{equation}
-\begin{aligned}
-T(n)=c_1n+c_2(n-1)+c_3(n-1)+c_4\sum_{i=2}^{n}t_i+c_5\sum_{i=2}^{n}(t_i-1)+c_6\sum_{i=2}^{n}(t_i-1)+c_8(n-1)
-\end{aligned}
-\end{equation}
-</script>
-
-<p>分析算法的时候是根据算法的输入数据量进行的分析，不过就算是同样的数据输入量，输入数据的不同仍旧会造成算法运行时间的天差地别。</p>
-
-<p>就像这里的插入排序，一副已经洗好的从大到小排列的牌是所谓的Best Case，因为已经排好序了，每一次while循环都会在第一次条件判断时中断。所以第1、2、3、8行的执行时间不变，但是第5、6行根本就得不到执行，第4行将总共执行n-1次。</p>
-
-<p>也就是：</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\begin{equation}
-\begin{aligned}
-T(n)&=c_1n+c_2(n-1)+c_3(n-1)+c_4(n-1)+c_8(n-1)\\
-&=(c_1+c_2+c_3+c_4+c_8)n+(c_2+c_3+c_4+c_8)
-\end{aligned}
-\end{equation}
- %]]&gt;</script>
-
-<p>显然这是个一次多项式，是一个线性方程，也把这时候的时间复杂度称为线性复杂度。</p>
-
-<p>而一副从小到大排序的扑克对于这里的插入排序来说，就是一个噩梦了，Worst Case。</p>
-
-<p>对于第4行来说，$t_i$正好等于$i$的值，执行总次数为$\sum_{i=2}^{n}i=\frac{n(n+1)}{2}-1$。</p>
-
-<p>第5、6行的执行总次数为$\sum_{i=2}^{n}(i-1)=\frac{n(n-1)}{2}$。</p>
-
-<p>所以：</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\begin{equation}
-\begin{aligned}
-T(n)&=c_1n+c_2(n-1)+c_3(n-1)+c_4(\frac{n(n+1)}{2}-1)+c_5\frac{n(n-1)}{2}+c_6\frac{n(n-1)}{2}+c_8(n-1)\\
-&=(\frac{c_4}{2}+\frac{c_5}{2}+\frac{c_6}{2})n^2+(c_1+c_2+c_3+\frac{c_4}{2}-\frac{c_5}{2}-\frac{c_6}{2}+c_8)n-(c_2+c_3+c_4+c_8)
-\end{aligned}
-\end{equation}
- %]]&gt;</script>
-
-<p>嗯，挺长的一串的，其实也就是一个二次多项式而已，也把此时的时间复杂度称为平方复杂度。</p>
-
-<p>因为无法预先确定输入数据的质量，所以一般在算法分析中给算法定出一个上限，采用worst case的分析方式。也就是不管输入数据怎么样变化，算法的运行时间总不会超过某个相应的量，只少不多。</p>
-
-<p>Average case的分析方式个人感觉在实际应用中有一定优势，不过书上说这种分析方式比起worst case来说要麻烦太多了，而且对于某些特定问题来说一个”平均“的定义也不是特别的清晰。但是average case对于随机算法来说却是一个很好的分析方法，用概率的方法给出运行时间，比如快速排序算法。</p>
-
-<p>因为比较两个算法时，像上面那样的具体分析往往是不必要的，所以一般用算法运行时间的增长率为标准判断算法优劣。前面插入排序的worst case运行时间就是$Θ(n^2)$。</p>
-
-<p>–未完待续–</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CLRS - Ch2.1 - Insertion Sort]]></title>
-    <link href="http://Cryonyx.github.io/blog/2013/07/31/clrs-2-1-note/"/>
-    <updated>2013-07-31T19:49:00+08:00</updated>
-    <id>http://Cryonyx.github.io/blog/2013/07/31/clrs-2-1-note</id>
-    <content type="html"><![CDATA[<h3 id="insertion-sort---">1.Insertion Sort - 插入排序</h3>
-<p>插入排序是非常基础的一类排序，它和平时玩扑克牌时摸牌的排序方法几乎一模一样。每当拿到一张牌，我们就从右向左（反向当然也行）依次查看手上的牌的大小，直到找到一张牌比摸到的牌大，就把摸到的牌放到这一张后面。反复摸牌，最后我们就得到了一副从大到小排列的牌。这也符合我个人的打牌习惯。</p>
-
-<p>这个算法非常基础，CLRS本节中也已经对此讲的很清楚了，这里仅仅列出C语言实现。注意书中是从小到大进行的排列。</p>
-
-<!--more-->
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Insertion Sort</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="kt">void</span> <span class="nf">insertionSort</span><span class="p">(</span><span class="kt">int</span> <span class="n">A</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">num</span><span class="p">){</span>
-</span><span class="line">    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">key</span><span class="p">;</span>
-</span><span class="line">    <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>  <span class="cm">/* 为了便于理解，这里设数组大小为num+1，数组从1开始计算下标 */</span>
-</span><span class="line">        <span class="n">key</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span><span class="line">        <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class="line">        <span class="k">while</span><span class="p">(</span><span class="n">j</span><span class="o">&gt;</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;</span><span class="n">key</span><span class="p">){</span>
-</span><span class="line">            <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>      <span class="cm">/* 如果前一张牌比当前的牌大则交换两者 */</span>
-</span><span class="line">            <span class="n">j</span><span class="o">--</span><span class="p">;</span>
-</span><span class="line">        <span class="p">}</span>
-</span><span class="line">        <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span><span class="p">;</span>
-</span><span class="line">    <span class="p">}</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="loop-invariant---">2.Loop Invariant - 循环不变式</h3>
-<p>有时候为了解决某个问题而设计了某个算法后，虽然直觉上觉得这个算法应该能用，而实际的运行也确实能够正确解决这个问题，不过这个算法到底为什么是正确的呢？严谨一点儿的话，就不能仅仅靠直觉来判断了，所以CLRS中引入了<strong>Loop Invariant</strong>的概念，从数学上对算法中循环的正确性进行证明。</p>
-
-<p><strong>Loop Invariant</strong>是数学归纳法的一种变体，它和数学归纳法几乎完全相同，都是先证明一个初始条件为真，然后逐条递推，唯一的区别在于数学归纳法是将归纳步骤无限进行下去，证明了第n步再继续证明第n+1步，而Loop Invariant则是要在某一步停止，也就是当完成了循环的条件时。</p>
-
-<p>书中列出了应用Loop Invariant的三个步骤：</p>
-
-<blockquote>
-  <p><strong>Initialization</strong>: It is true prior to the first iteration of the loop.</p>
-
-  <p><strong>Maintenance</strong>: If it is true before an iteration of the loop, it remains true before the next iteration.</p>
-
-  <p><strong>Termination</strong>: When the loop terminates, the invariant gives us a useful property that hepls show that the algorithm is correct.</p>
-</blockquote>
-
-<p>然后这里就用循环不变式对上面提到的Insertion Sort进行检验。</p>
-
-<p><strong>Initializaton：</strong>首先，循环的初始条件是<code>i=2</code>，这个时候i指向数组中第2个元素，此时数组<code>A[1...i-1]</code>也就是<code>A[1]</code>仅包含1个元素，所以trivially，这一个元素的数组肯定是排好序的。</p>
-
-<p><strong>Maintenance：</strong>接着，<code>i=2</code>，循环进行第一次iteration。在进行这次循环之前，算法肯定是已经正确排序了<code>A[1]</code>。而注意每次的循环都是从选定的位置开始向左遍历，依次把比它小的牌右移一位，直到找到自己合适的位置。所以第1次循环结束后，数组的前两个元素<code>A[1...2]</code>处于排好序的状态。以此递推，可知第i次循环开始前，<code>A[1...i-1]</code>处于排好序的状态，而当次循环结束以后，第i个数已经被放到了正确的位置，数组<code>A[1...i]</code>无疑包含了已经正确排序的数组，而<code>A[i+1...num]</code>仍旧处于未排序状态。</p>
-
-<p><strong>Termination：</strong>最后就是循环结束了。当循环结束时<code>i=num+1</code>，此时<code>A[1...i-1]</code>就是<code>A[1...num]</code>，也就是整个数组，可知是处于排好序的状态。</p>
-
-<p>至此，就用类似数学归纳法的Loop Invariant将完全由循环构成的Insertion Sort的算法正确性给证明了。</p>
 ]]></content>
   </entry>
   

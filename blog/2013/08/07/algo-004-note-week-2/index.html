@@ -147,20 +147,21 @@ T(n)=aT(\frac{n}{b})+O(n^d)
 
 <p>然后就能够根据a、b、d的值得到如下式子：</p>
 
-<p>$$
+<script type="math/tex; mode=display">% <![CDATA[
+
 \begin{equation}
 \begin{aligned}
 T(n)=
 \begin{cases}
-O(n^dlogn) &amp;(a=b^d)<br />
-O(n^d) &amp;(a&lt;b^d)<br />
-O(n^{log_ba}) &amp;(a&gt;b^d)
+O(n^dlogn) &(a=b^d)\\
+O(n^d) &(a<b^d)\\
+O(n^{log_ba}) &(a>b^d)
 \end{cases}
 \end{aligned}
 \end{equation}
-$$
-<!--more-->
-这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
+ %]]></script>
+
+<p>这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
 
 <p>现在，根据$a$与$b^d$的关系，我们就能够利用<code>Master Method</code>来进行算法分析了。</p>
 
@@ -170,6 +171,8 @@ $$
 <p>对于<code>Karatsuba Multiplication</code>而言，$a=3，b=2，d=0$，所以$T(n)=O(n^{log_23})$。</p>
 
 <p>对于<code>Binary Search</code>而言，$a=1，b=2，d=0$，所以$T(n)=O(n^0log_2n)=O(log_2n)$。</p>
+
+<!-- more -->
 
 <h3 id="proof---">Proof - 证明</h3>
 <p>把上面的三种情况给记住就能应付相当一部分的分析了，不过为了更深入的理解<code>Master Method</code>，我们看看这三种情况是怎么来的。</p>
@@ -525,6 +528,8 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
         <a class="basic-alignment left" href="/blog/2013/08/07/algo-004-note-week-1/" title="Previous Post: Algorithms - Week 1 - Note">&laquo; Algorithms - Week 1 - Note</a>
       
       
+        <a class="basic-alignment right" href="/blog/2013/09/05/dm-day-001/" title="Next Post: 数据挖掘实验室日记 - 第一天">数据挖掘实验室日记 - 第一天 &raquo;</a>
+      
     </p>
   </footer>
 </article>
@@ -541,11 +546,23 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/clrsdu-shu-bi-ji'>CLRS读书笔记 (2)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/diary'>Diary (1)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li><li><a href='/blog/categories/sui-bi'>随笔 (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/15/the-people-i-met-in-college/">我在大学里边遇到的那些人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/06/dm-day-002/">数据挖掘实验室日记 - 第二天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/05/dm-day-001/">数据挖掘实验室日记 - 第一天</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/08/07/algo-004-note-week-2/">Algorithms - Week 2 - Note</a>
@@ -557,14 +574,6 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
     
       <li class="post">
         <a href="/blog/2013/08/01/building-octopress-blog/">用Geek的方式来写博客(1)：在Github上搭建Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-2-analyzing-algorithm/">CLRS - Ch2.2 - Analyzing Algorithm</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-1-note/">CLRS - Ch2.1 - Insertion Sort</a>
       </li>
     
       <li class="post">
@@ -585,14 +594,16 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
   <h1>Tags</h1>
   <ul class="tag-cloud">
     <a style="font-size: 180%" href="/tags/algorithm/">Algorithm</a>
-<a style="font-size: 130%" href="/tags/archlinux/">Archlinux</a>
+<a style="font-size: 180%" href="/tags/archlinux/">Archlinux</a>
 <a style="font-size: 80%" href="/tags/blog/">Blog</a>
-<a style="font-size: 130%" href="/tags/clrs/">CLRS</a>
-<a style="font-size: 130%" href="/tags/coursera/">Coursera</a>
-<a style="font-size: 130%" href="/tags/hello-world/">Hello World</a>
-<a style="font-size: 130%" href="/tags/misc/">Misc</a>
+<a style="font-size: 180%" href="/tags/coursera/">Coursera</a>
+<a style="font-size: 80%" href="/tags/data-mining/">Data Mining</a>
+<a style="font-size: 180%" href="/tags/hello-world/">Hello World</a>
+<a style="font-size: 180%" href="/tags/misc/">Misc</a>
 <a style="font-size: 80%" href="/tags/octopress/">Octopress</a>
 <a style="font-size: 80%" href="/tags/test/">Test</a>
+<a style="font-size: 80%" href="/tags/da-xue/">大学</a>
+<a style="font-size: 80%" href="/tags/sui-bi/">随笔</a>
 
   </ul>
 </section>

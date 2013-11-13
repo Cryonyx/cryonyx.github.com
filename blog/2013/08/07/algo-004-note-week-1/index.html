@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="零、写在算法学习之前
-可能对于一名普通的软件编程人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味， &hellip;">
+这是Coursera站上的Algorithms：Design and Analysis课程的笔记，综合推荐阅读材料（几乎就是CLRS了），再加上本人的一些理解，汇集而成。在整理修改之后，我会慢慢的放到博客上边，以后参加这门课程的童鞋们可以作为参考， &hellip;">
   <meta name="keywords" content="Algorithm, Coursera">
 
   <!-- http://t.co/dKP3o1e -->
@@ -131,13 +131,15 @@ MathJax.Hub.Config({
 
 
 <div class="entry-content"><h2 id="section">零、写在算法学习之前</h2>
-<p>可能对于一名普通的软件编程人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
+<p>这是Coursera站上的<a href="https://class.coursera.org/algo-004/class/index">Algorithms：Design and Analysis</a>课程的笔记，综合推荐阅读材料（几乎就是CLRS了），再加上本人的一些理解，汇集而成。在整理修改之后，我会慢慢的放到博客上边，以后参加这门课程的童鞋们可以作为参考，不过我尽量做到就算没看过课程的人也能读懂明白是在讲啥的程度的吧～有错误的地方欢迎大家指出哈～</p>
+
+<p>可能对于一名普通的软件开发人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
 
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
-<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～
-<!--more-->
-## 一、算法分析基本符号</p>
+<p>另外，极为想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
+
+<h2 id="section-1">一、算法分析基本符号</h2>
 
 <h3 id="big-oh-notation">Big-Oh Notation</h3>
 <p>$T(n)=O(f(n))$</p>
@@ -163,6 +165,8 @@ MathJax.Hub.Config({
 <p>数学定义：$T(n)=Θ(f(n))$当且仅当存在一个正常数$c_1$，$c_2$以及正整数$n_0$，使得对于任意$n&gt;n_0$，总有$c_1f(n)\leqslant T(n)\leqslant cf(n)$。</p>
 
 <p>这表示，T(n)与f(n)仅相差一个常数项系数大小，也就是说它们的增长率相同。</p>
+
+<!-- more -->
 
 <h3 id="o-and-">o and ω</h3>
 <p>此外，还有Little-Oh(o)和ω符号，他们的定义与Big-Oh和Ω相似，但是取消了相等的条件。</p>
@@ -292,7 +296,7 @@ MathJax.Hub.Config({
 <h3 id="merge-sort---">Merge Sort - 归并排序</h3>
 <p>这是一个排序算法，在1945年由John von Neumann所提出。和我们熟悉的冒泡排序、插入排序、选择排序相比，这个算法面对大数据的时候占有很大优势，因为它的算法时间复杂度仅为$Θ(n\log_2n)$，而冒泡排序等都为$Θ(n^2)$。需要注意，$\log_2n$要远小于$n$哦，可以把$2^{20}$代进去看看。</p>
 
-<h4 id="section-1">算法实现</h4>
+<h4 id="section-2">算法实现</h4>
 <p>Merge Sort的思路完全符合D&amp;C：</p>
 
 <p><strong>Divide：</strong>将$n$个元素的数组划分为两个$\frac{n}{2}$个元素的数组；</p>
@@ -643,11 +647,23 @@ T(n)=
   
     <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/clrsdu-shu-bi-ji'>CLRS读书笔记 (2)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/archlinux'>Archlinux (1)</a></li><li><a href='/blog/categories/coursera'>Coursera (2)</a></li><li><a href='/blog/categories/diary'>Diary (1)</a></li><li><a href='/blog/categories/hello-world'>Hello World (1)</a></li><li><a href='/blog/categories/octopress'>Octopress (1)</a></li><li><a href='/blog/categories/test'>Test (1)</a></li><li><a href='/blog/categories/sui-bi'>随笔 (1)</a></li></ul>
 </section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/09/15/the-people-i-met-in-college/">我在大学里边遇到的那些人</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/06/dm-day-002/">数据挖掘实验室日记 - 第二天</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/05/dm-day-001/">数据挖掘实验室日记 - 第一天</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/08/07/algo-004-note-week-2/">Algorithms - Week 2 - Note</a>
@@ -659,14 +675,6 @@ T(n)=
     
       <li class="post">
         <a href="/blog/2013/08/01/building-octopress-blog/">用Geek的方式来写博客(1)：在Github上搭建Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-2-analyzing-algorithm/">CLRS - Ch2.2 - Analyzing Algorithm</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/31/clrs-2-1-note/">CLRS - Ch2.1 - Insertion Sort</a>
       </li>
     
       <li class="post">
@@ -687,14 +695,16 @@ T(n)=
   <h1>Tags</h1>
   <ul class="tag-cloud">
     <a style="font-size: 180%" href="/tags/algorithm/">Algorithm</a>
-<a style="font-size: 130%" href="/tags/archlinux/">Archlinux</a>
+<a style="font-size: 180%" href="/tags/archlinux/">Archlinux</a>
 <a style="font-size: 80%" href="/tags/blog/">Blog</a>
-<a style="font-size: 130%" href="/tags/clrs/">CLRS</a>
-<a style="font-size: 130%" href="/tags/coursera/">Coursera</a>
-<a style="font-size: 130%" href="/tags/hello-world/">Hello World</a>
-<a style="font-size: 130%" href="/tags/misc/">Misc</a>
+<a style="font-size: 180%" href="/tags/coursera/">Coursera</a>
+<a style="font-size: 80%" href="/tags/data-mining/">Data Mining</a>
+<a style="font-size: 180%" href="/tags/hello-world/">Hello World</a>
+<a style="font-size: 180%" href="/tags/misc/">Misc</a>
 <a style="font-size: 80%" href="/tags/octopress/">Octopress</a>
 <a style="font-size: 80%" href="/tags/test/">Test</a>
+<a style="font-size: 80%" href="/tags/da-xue/">大学</a>
+<a style="font-size: 80%" href="/tags/sui-bi/">随笔</a>
 
   </ul>
 </section>
