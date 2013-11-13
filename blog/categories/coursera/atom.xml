@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Coursera | Cryo-Nyx Blog]]></title>
   <link href="http://Cryonyx.github.io/blog/categories/coursera/atom.xml" rel="self"/>
   <link href="http://Cryonyx.github.io/"/>
-  <updated>2013-11-13T10:00:15+08:00</updated>
+  <updated>2013-11-13T10:57:17+08:00</updated>
   <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -331,9 +331,9 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
-<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
-
-<h2 id="section-1">一、算法分析基本符号</h2>
+<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～
+<!-- more -->
+## 一、算法分析基本符号</p>
 
 <h3 id="big-oh-notation">Big-Oh Notation</h3>
 <p>$T(n)=O(f(n))$</p>
@@ -485,7 +485,7 @@ int Fib(int n){
 <h3 id="merge-sort---">Merge Sort - 归并排序</h3>
 <p>这是一个排序算法，在1945年由John von Neumann所提出。和我们熟悉的冒泡排序、插入排序、选择排序相比，这个算法面对大数据的时候占有很大优势，因为它的算法时间复杂度仅为$Θ(n\log_2n)$，而冒泡排序等都为$Θ(n^2)$。需要注意，$\log_2n$要远小于$n$哦，可以把$2^{20}$代进去看看。</p>
 
-<h4 id="section-2">算法实现</h4>
+<h4 id="section-1">算法实现</h4>
 <p>Merge Sort的思路完全符合D&amp;C：</p>
 
 <p><strong>Divide：</strong>将$n$个元素的数组划分为两个$\frac{n}{2}$个元素的数组；</p>
