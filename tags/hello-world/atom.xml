@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tag:Hello World | Cryo-Nyx Blog]]></title>
-  <link href="http://blog.cryonyx.tk/tags/hello-world/atom.xml" rel="self"/>
-  <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:21:46+08:00</updated>
-  <id>http://blog.cryonyx.tk/</id>
+  <link href="http://Cryonyx.github.io/tags/hello-world/atom.xml" rel="self"/>
+  <link href="http://Cryonyx.github.io/"/>
+  <updated>2013-11-13T10:00:15+08:00</updated>
+  <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[测试001]]></title>
-    <link href="http://blog.cryonyx.tk/blog/2013/07/31/test001/"/>
+    <link href="http://Cryonyx.github.io/blog/2013/07/31/test001/"/>
     <updated>2013-07-31T12:52:00+08:00</updated>
-    <id>http://blog.cryonyx.tk/blog/2013/07/31/test001</id>
+    <id>http://Cryonyx.github.io/blog/2013/07/31/test001</id>
     <content type="html"><![CDATA[<p>这是Octopress部分功能的测试</p>
 
 <!--more-->
@@ -74,9 +74,9 @@
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://blog.cryonyx.tk/blog/2013/07/29/hello-world/"/>
+    <link href="http://Cryonyx.github.io/blog/2013/07/29/hello-world/"/>
     <updated>2013-07-29T20:12:00+08:00</updated>
-    <id>http://blog.cryonyx.tk/blog/2013/07/29/hello-world</id>
+    <id>http://Cryonyx.github.io/blog/2013/07/29/hello-world</id>
     <content type="html"><![CDATA[<p>Hello World!</p>
 
 <p>好吧，这是我用Octopress在Github上搭建好博客的第一篇文章。</p>

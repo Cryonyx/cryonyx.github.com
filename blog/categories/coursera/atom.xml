@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Coursera | Cryo-Nyx Blog]]></title>
-  <link href="http://blog.cryonyx.tk/blog/categories/coursera/atom.xml" rel="self"/>
-  <link href="http://blog.cryonyx.tk/"/>
-  <updated>2013-08-10T22:21:46+08:00</updated>
-  <id>http://blog.cryonyx.tk/</id>
+  <link href="http://Cryonyx.github.io/blog/categories/coursera/atom.xml" rel="self"/>
+  <link href="http://Cryonyx.github.io/"/>
+  <updated>2013-11-13T10:00:15+08:00</updated>
+  <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Algorithms - Week 2 - Note]]></title>
-    <link href="http://blog.cryonyx.tk/blog/2013/08/07/algo-004-note-week-2/"/>
+    <link href="http://Cryonyx.github.io/blog/2013/08/07/algo-004-note-week-2/"/>
     <updated>2013-08-07T21:03:00+08:00</updated>
-    <id>http://blog.cryonyx.tk/blog/2013/08/07/algo-004-note-week-2</id>
+    <id>http://Cryonyx.github.io/blog/2013/08/07/algo-004-note-week-2</id>
     <content type="html"><![CDATA[<h2 id="master-method">一、Master Method</h2>
 <p>前面对算法进行了一定程度的分析，这里要祭出一个分析利器：<code>Master Method</code>。</p>
 
@@ -59,8 +59,6 @@ O(n^{log_ba}) &(a>b^d)
 <p>对于<code>Karatsuba Multiplication</code>而言，$a=3，b=2，d=0$，所以$T(n)=O(n^{log_23})$。</p>
 
 <p>对于<code>Binary Search</code>而言，$a=1，b=2，d=0$，所以$T(n)=O(n^0log_2n)=O(log_2n)$。</p>
-
-<!-- more -->
 
 <h3 id="proof---">Proof - 证明</h3>
 <p>把上面的三种情况给记住就能应付相当一部分的分析了，不过为了更深入的理解<code>Master Method</code>，我们看看这三种情况是怎么来的。</p>
@@ -325,17 +323,15 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
   
   <entry>
     <title type="html"><![CDATA[Algorithms - Week 1 - Note]]></title>
-    <link href="http://blog.cryonyx.tk/blog/2013/08/07/algo-004-note-week-1/"/>
+    <link href="http://Cryonyx.github.io/blog/2013/08/07/algo-004-note-week-1/"/>
     <updated>2013-08-07T21:03:00+08:00</updated>
-    <id>http://blog.cryonyx.tk/blog/2013/08/07/algo-004-note-week-1</id>
+    <id>http://Cryonyx.github.io/blog/2013/08/07/algo-004-note-week-1</id>
     <content type="html"><![CDATA[<h2 id="section">零、写在算法学习之前</h2>
-<p>这是Coursera站上的<a href="https://class.coursera.org/algo-004/class/index">Algorithms：Design and Analysis</a>课程的笔记，综合推荐阅读材料（几乎就是CLRS了），再加上本人的一些理解，汇集而成。在整理修改之后，我会慢慢的放到博客上边，以后参加这门课程的童鞋们可以作为参考，不过我尽量做到就算没看过课程的人也能读懂明白是在讲啥的程度的吧～有错误的地方欢迎大家指出哈～</p>
-
-<p>可能对于一名普通的软件开发人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
+<p>可能对于一名普通的软件编程人员，对于算法的深入学习不是一件特别必要的事情。不过要是想要提升自己，更深程度的理解计算机的世界，那么算法的学习是必不可少的。作为一名计算机科学与技术的本科生，我以后并不准备当一名算法专家，冗长的数学证明也并不合我口味，不过这并不妨碍我深入了解一下算法分析的应用，这无疑会给我能力的提升带来莫大的好处。</p>
 
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
-<p>另外，极为想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
+<p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～</p>
 
 <h2 id="section-1">一、算法分析基本符号</h2>
 
@@ -363,8 +359,6 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 <p>数学定义：$T(n)=Θ(f(n))$当且仅当存在一个正常数$c_1$，$c_2$以及正整数$n_0$，使得对于任意$n&gt;n_0$，总有$c_1f(n)\leqslant T(n)\leqslant cf(n)$。</p>
 
 <p>这表示，T(n)与f(n)仅相差一个常数项系数大小，也就是说它们的增长率相同。</p>
-
-<!-- more -->
 
 <h3 id="o-and-">o and ω</h3>
 <p>此外，还有Little-Oh(o)和ω符号，他们的定义与Big-Oh和Ω相似，但是取消了相等的条件。</p>
