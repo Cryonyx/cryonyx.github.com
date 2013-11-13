@@ -147,21 +147,20 @@ T(n)=aT(\frac{n}{b})+O(n^d)
 
 <p>然后就能够根据a、b、d的值得到如下式子：</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-
+<p>$$
 \begin{equation}
 \begin{aligned}
 T(n)=
 \begin{cases}
-O(n^dlogn) &(a=b^d)\\
-O(n^d) &(a<b^d)\\
-O(n^{log_ba}) &(a>b^d)
+O(n^dlogn) &amp;(a=b^d)<br />
+O(n^d) &amp;(a&lt;b^d)<br />
+O(n^{log_ba}) &amp;(a&gt;b^d)
 \end{cases}
 \end{aligned}
 \end{equation}
- %]]></script>
-
-<p>这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
+$$
+<!--more-->
+这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
 
 <p>现在，根据$a$与$b^d$的关系，我们就能够利用<code>Master Method</code>来进行算法分析了。</p>
 

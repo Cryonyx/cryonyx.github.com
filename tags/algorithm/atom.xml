@@ -4,7 +4,7 @@
   <title><![CDATA[Tag:Algorithm | Cryo-Nyx Blog]]></title>
   <link href="http://Cryonyx.github.io/tags/algorithm/atom.xml" rel="self"/>
   <link href="http://Cryonyx.github.io/"/>
-  <updated>2013-11-13T10:57:17+08:00</updated>
+  <updated>2013-11-13T10:59:08+08:00</updated>
   <id>http://Cryonyx.github.io/</id>
   <author>
     <name><![CDATA[Cryonyx]]></name>
@@ -35,21 +35,20 @@ T(n)=aT(\frac{n}{b})+O(n^d)
 
 <p>然后就能够根据a、b、d的值得到如下式子：</p>
 
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
+<p>$$
 \begin{equation}
 \begin{aligned}
 T(n)=
 \begin{cases}
-O(n^dlogn) &(a=b^d)\\
-O(n^d) &(a<b^d)\\
-O(n^{log_ba}) &(a>b^d)
+O(n^dlogn) &amp;(a=b^d)<br />
+O(n^d) &amp;(a&lt;b^d)<br />
+O(n^{log_ba}) &amp;(a&gt;b^d)
 \end{cases}
 \end{aligned}
 \end{equation}
- %]]&gt;</script>
-
-<p>这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
+$$
+<!--more-->
+这其中，$a$是每次<code>Divide</code>时划分出的子问题数量，$b$是每次<code>Divide</code>时子问题相对原问题的大小的倒数，<code>d</code>是递归之外的操作的幂。</p>
 
 <p>现在，根据$a$与$b^d$的关系，我们就能够利用<code>Master Method</code>来进行算法分析了。</p>
 
@@ -332,7 +331,7 @@ log_{\frac{1}{1-α}}n&=\frac{log_2n}{log_2{\frac{1}{1-α}}}\\
 <p><code>《Algorithms: Design and Analysis, Part 1》</code>第一周的课程里边有一句话是Professor Tim想要我们记住的：<strong><em>“Can we do better?”</em></strong>，在学习的过程中我们要时刻回想这句话，我们已经做得够好了吗？还能更好吗？</p>
 
 <p>另外，实在想吐槽<code>Professor Tim</code>的用词和语速，还有那糟糕的板书——写的还没我好呢～
-<!-- more -->
+<!--more-->
 ## 一、算法分析基本符号</p>
 
 <h3 id="big-oh-notation">Big-Oh Notation</h3>
