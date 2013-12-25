@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Tag:Artificial Intelligence | Cryonyx's Blog]]></title>
+  <link href="http://Cryonyx.github.io/tags/artificial-intelligence/atom.xml" rel="self"/>
+  <link href="http://Cryonyx.github.io/"/>
+  <updated>2013-12-25T18:27:37+08:00</updated>
+  <id>http://Cryonyx.github.io/</id>
+  <author>
+    <name><![CDATA[Cryonyx]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Genetic Algorithm Intro]]></title>
+    <link href="http://Cryonyx.github.io/blog/2013/12/01/genetic-algorithm-intro/"/>
+    <updated>2013-12-01T16:51:00+08:00</updated>
+    <id>http://Cryonyx.github.io/blog/2013/12/01/genetic-algorithm-intro</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
